@@ -7,7 +7,7 @@ import com.workintech.model.Mitsubishi;
 import com.workintech.skeleton.CarSkeleton;
 import com.workintech.skeleton.ElectricCar;
 import com.workintech.skeleton.GasPoweredCar;
-
+import com.workintech.skeleton.HybridCar;
 
 
 public class Main {
@@ -52,12 +52,19 @@ public class Main {
 
         CarSkeleton car2 = new GasPoweredCar("B", "C", 20, 4);
 
+        CarSkeleton car3 = new HybridCar("D", "E", 20, 4, 6);
+
         car1.drive();
 
         car2.drive();
 
+        car3.drive();
+
         car1.startEngine();
 
         car2.startEngine();
+
+        car3.startEngine();
+
     }
 }
